@@ -36,13 +36,16 @@ export default class Nav extends React.Component {
           <div class={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li activeClassName="active" onlyActiveOnIndex={true}>
-                <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Featured</IndexLink>
+                <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Top</IndexLink>
               </li>
-              <li activeClassName="active">
-                <Link to="archives" onClick={this.toggleCollapse.bind(this)}>Archives</Link>
+			  <li activeClassName="active">
+                <Link to="shops" onClick={this.toggleCollapse.bind(this)}>Shops</Link>
               </li>
-              <li activeClassName="active">
-                <Link to="settings" onClick={this.toggleCollapse.bind(this)}>Settings</Link>
+			  <li activeClassName="active">
+                <Link to="categories" onClick={this.toggleCollapse.bind(this)}>Categories</Link>
+              </li>
+			  <li activeClassName="active">
+                <Link to="pages" onClick={this.toggleCollapse.bind(this)}>Pages</Link>
               </li>
             </ul>
           </div>

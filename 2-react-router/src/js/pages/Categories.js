@@ -9,22 +9,19 @@ export default class Archives extends React.Component {
     const { article } = params;
     const { date, filter } = query;
 
-    const Articles = [
-      "Some Article",
-      "Some Other Article",
-      "Yet Another Article",
-      "Still More",
-      "Fake Article",
-      "Partial Article",
-      "American Article",
-      "Mexican Article",
+    const Categories = [
+		"Category 1",
+		"Category 1",
+		"Category 1",
+		"Category 1",
+		"Category 1",
     ].map((title, i) => <Article key={i} title={title}/> );
 
     return (
       <div>
-        <h1>Archives</h1>
+        <h1>Categories</h1>
         article: {article}, date: {date}, filter: {filter}
-        <div class="row">{Articles}</div>
+        <div class="row">{Categories}</div>
       </div>
     );
   }
